@@ -1,0 +1,36 @@
+/* globals.css */
+.section {
+  @apply bg-white rounded-2xl p-5 shadow-sm border border-gray-200;
+}
+
+.h2 {
+  @apply text-lg font-semibold text-gray-800 mb-2;
+}
+
+.table {
+  @apply w-full border border-gray-200 rounded-lg text-sm;
+}
+.table th {
+  @apply bg-gray-100 text-left font-semibold p-2 border-b border-gray-200;
+}
+.table td {
+  @apply p-2 border-b border-gray-100;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition;
+}
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 shadow;
+}
+.btn-success {
+  @apply bg-green-600 text-white hover:bg-green-700 shadow;
+}
+
+input {
+  @apply w-full px-3 py-2 border rounded-lg text-sm border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+label {
+  @apply block text-sm font-medium text-gray-600 mb-1;
+}

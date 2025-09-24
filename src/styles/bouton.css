@@ -1,0 +1,84 @@
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+/* === bouton groupe ===*/
+
+.btn-group {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.btn-group .btn {
+  --border-right: 6px;
+  --text-stroke-color: rgba(94, 89, 89, 0.6);
+  --animation-color: #e67e08;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  overflow: hidden;
+}
+
+/* Texte animé */
+.btn-group .btn::after {
+  content: attr(class); /* temporaire, on va corriger */
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  color: var(--animation-color);
+  width: 0%;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+  white-space: nowrap;
+}
+
+/* Hover */
+.btn-group .btn:hover::after {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}

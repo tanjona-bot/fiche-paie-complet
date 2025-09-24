@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Labels */
+label { 
+  @apply text-sm font-medium text-gray-700; 
+}
+
+/* Inputs et selects */
+input, select { 
+  @apply border rounded-lg px-3 py-2 w-full bg-white shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none transition;
+}
+
+/* Sections (cards) */
+.section { 
+  @apply bg-white border rounded-2xl p-6 shadow-lg hover:shadow-xl transition;
+}
+
+/* Titres */
+.h2 { 
+  @apply text-xl font-bold mb-4 text-gray-800;
+}
+
+/* Boutons généraux */
+.btn { 
+  @apply rounded-2xl px-5 py-2 font-medium transition shadow-sm;
+}
+
+/* Boutons primaires */
+.btn-primary { 
+  @apply bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800;
+}
+
+/* Boutons succès */
+.btn-success { 
+  @apply bg-green-600 text-white hover:bg-green-700 active:bg-green-800;
+}
+
+/* Boutons secondaires */
+.btn-secondary { 
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300 active:bg-gray-400;
+}
+
+/* Tableaux */
+.table { 
+  @apply w-full text-sm border border-gray-200 shadow-sm rounded-lg overflow-hidden;
+}
+
+.table th { 
+  @apply bg-gray-100 text-left px-3 py-2 border-b font-semibold text-gray-700;
+}
+
+.table td { 
+  @apply px-3 py-2 border-b text-gray-600;
+}
+
+ 
